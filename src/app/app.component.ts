@@ -7,7 +7,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Template-Based Contact Form Example';
+  title = 'Contact Form';
 
   onSubmit(form: NgForm) {
     console.log('Your form data : ', form.value);

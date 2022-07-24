@@ -1,13 +1,20 @@
 
+<div class="main-container">
 
-<form #myform="ngForm" (ngSubmit)="onSubmit(myform)">
+  <div class="title-container">
+    <h2 class="title">{{ title }}</h2>
+  </div>
 
-  <input type="text" name="fullName" placeholder="Your full name" ngModel>
+  <form #myform="ngForm" (ngSubmit)="onSubmit(myform)">
+    <input class="text-input" type="text" name="fullName" placeholder="Your full name" ngModel>
 
-  <input type="email" name="email" placeholder="Your email" ngModel>
+    <input class="text-input" type="email" name="email" placeholder="Your email" ngModel>
 
-  <textarea name="message" placeholder="Your message" ngModel></textarea>
+    <textarea class="text-input" name="message" placeholder="Your message" ngModel></textarea>
 
-  <input type="submit" value="Send">
+    <div class="btn-container">
+      <input class="btn" type="submit" value="Send">
+    </div>
+  </form>
 
-</form>
+</div>

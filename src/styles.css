@@ -1,1 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-container {
+  width: 30em;
+  height: 20em;
+  margin: 5em auto;
+  box-shadow: 5px 5px 10px #000;
+}
+
+.title-container {
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 400;
+  color: #fff;
+  background-color: #E73841;
+  padding: 0.5em;
+}
+
+form {
+  padding-top: 1em;
+}
+
+.text-input {
+  display: block;
+  width: 100%;
+  padding: 0.2em 1em;
+}
+
+textarea {
+  height: 5em;
+}
+
+.btn-container {
+  text-align: center;
+  padding: 1em;
+}
+
+.btn {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #E73841;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em 2em;
+}
