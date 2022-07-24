@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Hero } from './hero';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,14 +7,9 @@ import { Hero } from './hero';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'heroForm';
+  title = 'Template-Based Contact Form Example';
 
-  powers = ['Really Smart', 'Super Flexible',
-            'Super Hot', 'Weather Changer'];
-
-  model = new Hero(18, 'Dr IQ', this.powers[0], 'Chuck Overstreet');
-
-  submitted = false;
-
-  onSubmit() { this.submitted = true; }
+  onSubmit(form: NgForm) {
+    console.log('Your form data : ', form.value);
+  }
 }
